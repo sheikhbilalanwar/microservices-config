@@ -2,3 +2,16 @@
     client:
       serviceUrl:
         defaultZone: http://localhost:8761/eureka/
+
+keycloak:
+  credentials:
+    secret: yQPTw1vFTwD9rCoy3BQAvvQ8QLpU1KUH
+  realm: springBootKeyclock
+  client: my_client
+  auth-server-url: http://localhost:8080
+  ssl-required: external
+  resource: cai-uaa
+  bearer-only: true
+  cors: true
+  public-client: true
+  connection-pool-size: 10        
