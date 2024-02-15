@@ -9,9 +9,6 @@ spring:
     hibernate:
       ddl-auto: update
 
-  application:
-    name: Question-Service
-
   security:
     oauth2:
       resourceserver:
