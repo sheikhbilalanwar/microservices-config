@@ -4,8 +4,8 @@ spring:
 
   security:
     user:
-     name: "bilal"
-     password: "bilal"
+      name: "bilal"
+      password: "bilal"
 
 eureka:
   instance:
