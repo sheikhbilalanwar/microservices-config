@@ -1,0 +1,22 @@
+spring:    
+  main:
+    allow-bean-definition-overriding: true
+    
+  security:
+    user:
+     name: "bilal"
+     password: "bilal"
+
+
+
+  cloud:
+    gateway:
+      routes:
+        - id: Key-Clock-Admin-Client
+          uri: http://bilal:8083/actuator/info
+          predicates:
+            - Path=/uaa/**
+        - id: Question-Service
+          uri: http://bilal:8082/actuator/info
+          predicates:
+            - Path=/questions/**
