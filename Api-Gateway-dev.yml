@@ -1,10 +1,17 @@
-server:
-  port: 8081
-spring:
-  application:
-    name: Api-Gateway
-
   security:
+
+    cloud:
+      gateway:
+        routes:
+          - id: Key-Clock-Admin-Client
+            uri: http://bilal:8083/actuator/info
+            predicates:
+              - Path=/uaa/**
+          - id: Question-Service
+            uri: http://bilal:8082/actuator/info
+            predicates:
+              - Path=/questions/**
+
     user:
       name: "bilal"
       password: "bilal"
@@ -18,14 +25,3 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/     
      
-  cloud:
-    gateway:
-      routes:
-        - id: Key-Clock-Admin-Client
-          uri: http://bilal:8083/actuator/info
-          predicates:
-            - Path=/uaa/**
-        - id: Question-Service
-          uri: http://bilal:8082/actuator/info
-          predicates:
-            - Path=/questions/**
