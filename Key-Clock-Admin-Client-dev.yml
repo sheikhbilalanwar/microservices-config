@@ -14,7 +14,7 @@ eureka:
     
 keycloak:
   credentials:
-    secret: yQPTw1vFTwD9rCoy3BQAvvQ8QLpU1KUH
+    # secret: yQPTw1vFTwD9rCoy3BQAvvQ8QLpU1KUH
   realm: springBootKeyclock
   client: my_client
   auth-server-url: http://localhost:8080
