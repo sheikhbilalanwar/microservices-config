@@ -1,14 +1,9 @@
-spring:    
-  main:
-    allow-bean-definition-overriding: true
-    
+spring:      
   security:
     user:
      name: "bilal"
      password: "bilal"
-
-
-
+     
   cloud:
     gateway:
       routes:
