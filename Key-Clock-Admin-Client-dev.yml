@@ -1,4 +1,17 @@
+spring:
+  application:
+    name: Key-Clock-Admin-Client-Dev
 
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    
+    
 keycloak:
   credentials:
     secret: yQPTw1vFTwD9rCoy3BQAvvQ8QLpU1KUH
