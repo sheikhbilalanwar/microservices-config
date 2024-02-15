@@ -1,6 +1,6 @@
 spring:
   application:
-    name: Key-Clock-Admin-Client-Dev
+    name: Key-Clock-Admin-Client
 
 eureka:
   instance:
