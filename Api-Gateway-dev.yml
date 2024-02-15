@@ -2,10 +2,10 @@ spring:
   application:
     name: Api-Gateway
 
-  security:
-    user:
-     name: "bilal"
-     password: "bilal"
+  # security:
+  #   user:
+  #    name: "bilal"
+  #    password: "bilal"
 
 eureka:
   instance:
