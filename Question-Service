@@ -10,11 +10,7 @@ spring:
       ddl-auto: update
 
   application:
-    name: QUESTION-SERVICE
-
-
-  config:
-    import: configserver:http://localhost:8085
+    name: Question-Service
 
   security:
     oauth2:
