@@ -1,21 +1,23 @@
 spring
   security:
-
-    cloud:
-      gateway:
-        routes:
-          - id: Key-Clock-Admin-Client
-            uri: http://bilal:8083/actuator/info
-            predicates:
-              - Path=/uaa/**
-          - id: Question-Service
-            uri: http://bilal:8082/actuator/info
-            predicates:
-              - Path=/questions/**
-
     user:
-      name: "bilal"
-      password: "bilal"
+     name: "bilal"
+     password: "bilal"
+
+
+
+  cloud:
+    gateway:
+      routes:
+        - id: Key-Clock-Admin-Client
+          uri: http://bilal:8083/actuator/info
+          predicates:
+            - Path=/uaa/**
+        - id: Question-Service
+          uri: http://bilal:8082/actuator/info
+          predicates:
+            - Path=/questions/**
+
 
 eureka:
   instance:
@@ -26,3 +28,4 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/     
      
+ 
