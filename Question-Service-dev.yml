@@ -1,17 +1,21 @@
 spring:
-  datasource:
+    datasource:
     url: jdbc:mysql://localhost:3306/question_db?createDatabaseIfNotExist=true
     username: root
     password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
     show-sql: true
     hibernate:
       ddl-auto: update
+
 
   security:
     oauth2:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:8080/realms/springBootKeyclock
+   
 
