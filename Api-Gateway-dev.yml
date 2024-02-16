@@ -10,8 +10,6 @@ spring:
      name: "bilal"
      password: "bilal"
 
-
-
   cloud:
     gateway:
       routes:
