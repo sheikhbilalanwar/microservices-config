@@ -1,5 +1,7 @@
 spring:
-    datasource:
+  application:
+    name: Question-Service
+  datasource:
     url: jdbc:mysql://localhost:3306/question_db?createDatabaseIfNotExist=true
     username: root
     password: admin
@@ -17,5 +19,3 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:8080/realms/springBootKeyclock
-   
-
